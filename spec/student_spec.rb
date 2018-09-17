@@ -32,5 +32,17 @@ def test_change_cohort
   assert_equal("E25", result)
 end
 
+def test_can_talk
+  result = @student2.talk
+  assert_equal("I can talk", result)
+end
+
+def test_favourite_language
+  result = @student1.say_favourite_language("Ruby")
+  assert_equal("I love Ruby", result)
+end
+
+
+
 
 end
