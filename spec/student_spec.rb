@@ -20,5 +20,17 @@ def test_cohort
   assert_equal("E23", result)
 end
 
+def test_change_name
+  @student1.name = "Connor Brown"
+  result = @student1.get_name
+  assert_equal("Connor Brown", result)
+end
+
+def test_change_cohort
+  @student3.cohort = "E25"
+  result = @student3.get_cohort
+  assert_equal("E25", result)
+end
+
 
 end
